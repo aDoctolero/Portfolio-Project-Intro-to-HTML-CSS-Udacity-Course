@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--This is a project for Intro to HTML and CSS course on Udacity. This is a Portfolio project-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name = "viewport" content="width=device-width, initial-scale=1">
+  <title>Framework w/ Bootstrap</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel = "stylesheet" href = "css/bootstrap.css">
+  <script type="text/javascript" src="js/jQuery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!--<script src = "js/bootstrap.min.js"></script>
+  <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">-->
+  <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+</head>
+<body> 
+  <div class = "container"> 
+  	<div class = "row">
+	  	<div class = "col-md-6">
+	  		<img class="title-logo img-responsive logo" src = "images/lynrdSkynrd.jpg" alt="Lynrd Skynrd logo">
+	  	</div>
+	  	<div class= "col-md-6 text-right text-uppercase">
+	      	<h1 class ="title-super text-thin">Angelica Doctolero</h1>
+	      	<h2>Front-end</h2>
+	    </div>
+  	</div>
+    <div class = "row">
+      <div class = "col-md-12">
+        <hr>
+      </div>
+    </div>
+    <div class = "row">
+    	<div class = "col-md-12">
+    		<img id = "big" class="img-responsive" src = "images/bigPic.jpg" alt="This is a picture">
+    	</div> 
+    </div> 
+    	<h2 class = "text-muted">Featured Work</h2> 
+    <div class="row text-center"> 
+      <div class="col-md-4">
+      	<img id="whyWontYouAlign" class="img-responsive featured" alt="Resume Project Picture" src="images/work.png" data-toggle = "modal" data-target="#myModal1">
+      	<h3>Resume Project</h3>
+      </div>
+      <div class="col-md-4">
+      	<img class="img-responsive featured" alt= "Weather Forecast Project" src="images/weatherForecast.png" data-toggle = "modal" data-target="#myModal2"> 
+      	<h3>Weather Forecast API Project</h3>
+      </div>
+      <div class="col-md-4">
+      	<img class="img-responsive featured" alt="Wikipedia Viewer Project" src="images/wikipediaViewer.png" data-toggle = "modal" data-target="#myModal3">
+      	<h3>Wikipedia API Viewer Project</h3>
+      </div>
+    </div>
+   </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/work.png" alt="Resume Project Picture">
+                    This is my Resume project from the Udacity JavaScript Course.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel2">Weather Forecast API</h4>
+      </div>
+      <div class="modal-body">
+        <img class = "img-responsive" src="images/weatherForecast.png" alt="Weather Forecast API Project">This is my weather API project from a FreeCodeCamp course.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel3">Wikipedia Viewer API</h4>
+      </div>
+      <div class="modal-body">
+        <img class = "img-responsive" src="images/wikipediaViewer.png" alt="wikipediaViewer Project Picture">This is my Wikipedia API project from a FreeCodeCamp course.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
